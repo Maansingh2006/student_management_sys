@@ -1,0 +1,223 @@
+/* ==========================================
+   GLOBAL STYLES
+========================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* ==========================================
+   HEADINGS
+========================================== */
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.main-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+button {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==========================================
+   HIDDEN
+========================================== */
+
+.hidden {
+    display: none;
+}
+
+
+/* ==========================================
+   PAGE HEADER
+========================================== */
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.page-header h1 {
+    margin-bottom: 0;
+}
+
+
+/* ==========================================
+   FORM
+========================================== */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+input[readonly] {
+    background: #e5e7eb;
+}
+
+
+/* ==========================================
+   SEARCH BOX
+========================================== */
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+}
+
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+
+    border-bottom: 1px solid #ddd;
+
+    font-size: 14px;
+}
+
+th {
+    background: #2563eb;
+    color: white;
+}
+
+tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+
+/* ==========================================
+   MESSAGES
+========================================== */
+
+#addMessage,
+#searchMessage,
+#updateMessage {
+    margin-top: 15px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 600px) {
+
+    .main-buttons,
+    .search-box {
+        flex-direction: column;
+    }
+
+}
+
+.main-buttons {
+    flex-wrap: wrap;
+}
+
+.receipt-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#receiptMessage {
+    margin-top: 15px;
+}

@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Update Student</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="page-header">
+
+            <h1>Update Student</h1>
+
+            <button onclick="goHome()">
+                Back
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Find Student</h2>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="updateFormId"
+                    placeholder="Enter Form ID"
+                >
+
+                <button onclick="findStudent()">
+                    Search
+                </button>
+
+            </div>
+
+            <p id="searchMessage"></p>
+
+        </div>
+
+        <div
+            id="updateCard"
+            class="card hidden"
+        >
+
+            <h2>Edit Student</h2>
+
+            <form id="updateForm">
+
+                <label>Form ID</label>
+
+                <input
+                    type="text"
+                    id="editFormId"
+                    
+                >
+
+                <label>Student Name</label>
+
+                <input
+                    type="text"
+                    id="editName"
+                    required
+                >
+
+                <label>Father Name</label>
+
+                <input
+                    type="text"
+                    id="editFatherName"
+                >
+
+                <label>Phone</label>
+
+                <input
+                    type="text"
+                    id="editPhone"
+                >
+
+                <label>Course</label>
+
+                <input
+                    type="text"
+                    id="editCourse"
+                >
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="editEmail"
+                >
+
+                <label>Totalfees</label>
+
+                <input
+                    type="text"
+                    id="editTotalfees"
+                >
+
+                <label>Paidfees</label>
+
+                <input
+                    type="text"
+                    id="editPaidfees"
+                >
+
+                <label>Duefees</label>
+
+                <input
+                    type="text"
+                    id="editDuefees"
+                >
+
+                <!-- <label>Email</label>
+
+                <input
+                    type="email"
+                    id="editEmail"
+                > -->
+
+                <button type="submit">
+                    Save Changes
+                </button>
+
+            </form>
+
+            <p id="updateMessage"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

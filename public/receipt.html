@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Generate Receipt</h1>
+            <button onclick="goHome()">
+                Back
+            </button>
+        </div>
+        <div class="card">
+            <h2>Student Receipt</h2>
+            <div class="receipt-form">
+                <label>Form ID</label>
+                <input type="text" id="receiptFormId" placeholder="Enter Form ID">
+                <label>Amount Paid (optional)</label>
+                <input type="number" id="receiptAmount" placeholder="Example: 2499" min="0" step="0.01">
+                <button onclick="generateReceipt()">
+                    Generate Receipt
+                </button>
+            </div>
+            <p id="receiptMessage"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
